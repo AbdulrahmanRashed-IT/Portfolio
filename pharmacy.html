@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RxTrack Pharmacy System</title>
+ <style>
+  :root {
+    --primary-color: #ff004f; /* Neon pink/red */
+    --accent-color: #00acee;  /* Bright blue */
+    --dark-bg: #181924;       /* Softened dark */
+    --card-bg-start: #222437;
+    --card-bg-end: #2e3048;
+    --text-color: #f2f2f2;
+    --muted-text: #c2c2c2;
+    --shadow-color: rgba(0, 0, 0, 0.45);
+  }
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--dark-bg);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+  }
+
+  .container {
+    max-width: 960px;
+    margin: 60px auto;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+    background: linear-gradient(145deg, var(--card-bg-start), var(--card-bg-end));
+    border-radius: 20px;
+    box-shadow: 0 10px 30px var(--shadow-color);
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 45px rgba(255, 0, 79, 0.35);
+  }
+
+  .card-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: white;
+    box-shadow: 0 0 12px rgba(255, 0, 79, 0.5);
+  }
+
+  .card-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 10px 0 15px;
+    color: var(--text-color);
+  }
+
+  .card-description {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--muted-text);
+    margin-bottom: 25px;
+  }
+
+  .learn-more {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    display: inline-flex;
+    align-items: center;
+    transition: 0.3s ease;
+  }
+
+  .learn-more:hover {
+    text-shadow: 0 0 10px var(--primary-color);
+  }
+
+  .learn-more::after {
+    content: "→";
+    margin-left: 8px;
+    transition: 0.3s ease;
+  }
+
+  .learn-more:hover::after {
+    transform: translateX(4px);
+  }
+</style>
+
+
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        <h2>RxTrack: Pharmacy Inventory & Sales System</h2>
+      </div>
+      <div class="card-body">
+        <p>
+          <strong>RxTrack</strong> is a lightweight pharmacy desktop solution powered entirely by <strong>MySQL</strong> as the backend database.
+          Designed for offline-first pharmacies, it supports secure inventory tracking, sales reporting, and customer data management.
+        </p>
+        <ul>
+          <li>🔍 Barcode scanning integration for accurate inventory handling</li>
+          <li>⏰ Expiry date alerts to prevent stocking outdated products</li>
+          <li>📈 Sales reporting dashboard for data-driven insights</li>
+          <li>💾 Offline-first storage model with MySQL for syncing and backup</li>
+          <li>📉 Reduces manual work by up to 60% with efficient automation</li>
+        </ul>
+        <p>
+          This system is ideal for small pharmacies with limited technical staff. It reduces human error,
+          streamlines operations, and protects sensitive data via secure database architecture. No internet required.
+        </p>
+      </div>
+      <div class="card-footer">
+        <a class="learn-more" href="sandal-description.html">Learn More</a>
+        <a class="github-link" href="https://github.com/AbdulrahmanRashed-IT/Pharmacy_Management_System" target="_blank">
+          <img src="https://img.icons8.com/ios-glyphs/30/github.png" alt="GitHub">
+          View Code
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
